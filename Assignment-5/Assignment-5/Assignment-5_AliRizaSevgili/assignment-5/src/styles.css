@@ -1,0 +1,85 @@
+h1 {
+  text-align: center;
+}
+
+span {
+  font-style: italic;
+  font-weight: 300;
+}
+img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+h2 {
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+  gap: 1em;
+}
+
+.card {
+  width: 13rem;
+  background-color: #122029;
+  padding: 16px;
+  border-radius: 15px;
+  transition: all 0.38s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+  border: rgb(23, 115, 92) 1px solid;
+  box-shadow:
+    #2c8479 2px 2px 10px,
+    #333333a4 2px 2px 10px,
+    #333 2px 2px 10px;
+}
+
+.card:active {
+  transform: translateY(1px);
+}
+
+.title {
+  font-size: 1em;
+  font-weight: 800;
+  margin-top: 1em;
+}
+
+.card h3 {
+  font-size: medium;
+  color: #508a84;
+}
+.card h2 {
+  color: #d9fffb;
+}
+
+.card:hover .fa-play {
+  visibility: visible;
+  font-size: 2.5rem;
+  color: #14c38e;
+}
+
+.year-duration {
+  color: #d9fffb;
+  display: flex;
+}
+
+.duration {
+  color: #d9fffb;
+  margin-left: auto;
+}
